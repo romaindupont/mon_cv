@@ -1,0 +1,23 @@
+.diplomes {
+  height: 500px;
+  background-color: #dfdada;
+  text-align: center;
+
+  &-title {
+    margin: 0;
+    padding-top: 3rem;
+    text-transform: uppercase;
+    color: #5a5a5a;
+    font-size: 2rem;
+
+  }
+  &-names {
+    font-size: 1.5rem;
+    color: #5a5a5a;
+    padding: 2rem 3rem;
+    text-align: center;
+  }
+  &-date {
+    padding-right: 3rem;
+  }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
-import MaTete from '../../assets/img/tetefinal.png'
+import MaTete from '../../assets/img/tetefinal.png';
+import Scroll from '../../assets/img/mouse.svg';
 import './style.scss';
 
 const Accueil = ({open}) => {
@@ -12,7 +13,7 @@ const Accueil = ({open}) => {
         <img className="accueil-picture" src={MaTete} alt="matete"/>
       </div>
       <h2 className="accueil-title">Développeur Web & web mobile</h2>
-      <p className="accueil-scroll">scroll</p>
+      <object className="accueil-scroll" type="image/svg+xml" data={Scroll}>svg-animation</object>
     </div>
   );
 }
