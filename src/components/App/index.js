@@ -3,7 +3,8 @@ import Menu from '../Menu';
 import Accueil from '../Accueil';
 import Apropos from '../Apropos';
 import Diplomes from '../Diplomes';
-
+import Connaissances from '../Connaissances';
+import Xp from '../Xp';
 const App = () => { 
   const [open, setOpen] = useState(false);
   
@@ -13,6 +14,8 @@ const App = () => {
       <Accueil open={open} />
       <Apropos />
       <Diplomes />
+      <Connaissances />
+      <Xp />
     </div>
 
 )}
