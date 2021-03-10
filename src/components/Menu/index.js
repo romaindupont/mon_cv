@@ -8,12 +8,12 @@ function Menu({open, setOpen}) {
     <div className="app-menu">
       <div className={classNames("menu-modal", {'menu-modal--open':open})}></div>
         <nav className={classNames("menu-nav", {'menu-nav--open':open})}>
-          <a href={url}>Accueil</a>
-          <a href={url}>A propos</a>
-          <a href={url}>Connaissances</a>
-          <a href={url}>Diplômes</a>
-          <a href={url}>Expériences</a>
-          <a href={url}>Contact</a>
+          <a className="menu-nav--link" href={url}>Accueil</a>
+          <a className="menu-nav--link" href={url}>A propos</a>
+          <a className="menu-nav--link" href={url}>Connaissances</a>
+          <a className="menu-nav--link" href={url}>Diplômes</a>
+          <a className="menu-nav--link" href={url}>Expériences</a>
+          <a className="menu-nav--link" href={url}>Contact</a>
         </nav>
         
       <div className="menu" onClick={e => setOpen(!open)}>
