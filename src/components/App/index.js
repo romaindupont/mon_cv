@@ -16,7 +16,7 @@ const App = () => {
         <Accueil open={open} />
         <Apropos />
         <Diplomes />
-        <Connaissances id="section 3"/>
+        <Connaissances />
         <Xp />
         <Contact />
     </div>

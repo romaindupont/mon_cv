@@ -11,12 +11,12 @@ function Menu({open, setOpen}) {
     <div className="app-menu">
       <div className={classNames("menu-modal", {'menu-modal--open':open})}></div>
         <nav className={classNames("menu-nav", {'menu-nav--open':open})}>
-          <Link to="/accueil#lienaccueil" onClick={closeMenu}>Accueil</Link>
-          <Link to="/a_propos#lienapropos" onClick={closeMenu}>A propos</Link>
-          <Link to="/connaissance#lienconnaissances" onClick={closeMenu}>Connaissances</Link>
-          <Link to="/diplomes#liendiplomes" onClick={closeMenu}>Diplômes</Link>
-          <Link to="/experiences#lienexperiences" onClick={closeMenu}>Expériences</Link>
-          <Link to="/contact#liencontact" onClick={closeMenu}>Contact</Link>
+          <Link className="menu-nav--link" to="/accueil#lienaccueil" onClick={closeMenu}>Accueil</Link>
+          <Link className="menu-nav--link" to="/a_propos#lienapropos" onClick={closeMenu}>A propos</Link>
+          <Link className="menu-nav--link" to="/connaissance#lienconnaissances" onClick={closeMenu}>Connaissances</Link>
+          <Link className="menu-nav--link" to="/diplomes#liendiplomes" onClick={closeMenu}>Diplômes</Link>
+          <Link className="menu-nav--link" to="/experiences#lienexperiences" onClick={closeMenu}>Expériences</Link>
+          <Link className="menu-nav--link" to="/contact#liencontact" onClick={closeMenu}>Contact</Link>
 
         </nav>
         

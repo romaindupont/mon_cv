@@ -1,5 +1,5 @@
 .xp {
-  height: 500px;
+  height: 500vh;
   background-color: #ffffff;
   text-align: center;
   
@@ -14,9 +14,9 @@
 }
 
 .xp-infos {
+  width: 100%;
   border: 1px solid black;
-  margin-right: 6rem;
-  margin: 6rem 50rem 6rem 3rem;
+  margin: 6rem 20rem 6rem 20rem;
   position: relative;
   box-shadow: 1px 1px 0px #999,
     2px 2px 0px #999,
@@ -64,4 +64,19 @@
     color: black;
     font-weight: 900;
   }
+}
+.xp-pictures{
+  width: 100%;
+}
+.xp-pictures > img {
+  width: 40%;
+  box-shadow: 10px 10px 10px 10px #999;
+  margin: 2rem;
+
+}
+.xp-container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+
 }
