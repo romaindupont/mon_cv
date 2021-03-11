@@ -5,6 +5,7 @@ import Apropos from '../Apropos';
 import Diplomes from '../Diplomes';
 import Connaissances from '../Connaissances';
 import Xp from '../Xp';
+import Contact from '../Contact';
 const App = () => { 
   const [open, setOpen] = useState(false);
   
@@ -16,6 +17,7 @@ const App = () => {
       <Diplomes />
       <Connaissances />
       <Xp />
+      <Contact />
     </div>
 
 )}
