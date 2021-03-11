@@ -4,7 +4,7 @@ import './style.scss';
 const Apropos = () => {
   
   return (
-    <div className="apropos">
+    <div id="lienapropos" className="apropos">
       <h2 className="apropos-title">A Propos de moi</h2>
       <p className="apropos-paragraph">Né en 1984, père de deux enfants, marié, passionné de sport. j’ai effectué 
 ma reconversion en 2021 en participant à la promotion O’clock Marty de 

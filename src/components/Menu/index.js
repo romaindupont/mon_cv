@@ -1,19 +1,23 @@
 import './style.scss';
 import classNames from 'classnames';
 import React from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Menu({open, setOpen}) {
-  let url ='';
+    const closeMenu = () => {
+        setOpen(!open);
+    }
   return (
     <div className="app-menu">
       <div className={classNames("menu-modal", {'menu-modal--open':open})}></div>
         <nav className={classNames("menu-nav", {'menu-nav--open':open})}>
-          <a className="menu-nav--link" href={url}>Accueil</a>
-          <a className="menu-nav--link" href={url}>A propos</a>
-          <a className="menu-nav--link" href={url}>Connaissances</a>
-          <a className="menu-nav--link" href={url}>Diplômes</a>
-          <a className="menu-nav--link" href={url}>Expériences</a>
-          <a className="menu-nav--link" href={url}>Contact</a>
+          <Link to="/accueil#lienaccueil" onClick={closeMenu}>Accueil</Link>
+          <Link to="/a_propos#lienapropos" onClick={closeMenu}>A propos</Link>
+          <Link to="/connaissance#lienconnaissances" onClick={closeMenu}>Connaissances</Link>
+          <Link to="/diplomes#liendiplomes" onClick={closeMenu}>Diplômes</Link>
+          <Link to="/experiences#lienexperiences" onClick={closeMenu}>Expériences</Link>
+          <Link to="/contact#liencontact" onClick={closeMenu}>Contact</Link>
+
         </nav>
         
       <div className="menu" onClick={e => setOpen(!open)}>

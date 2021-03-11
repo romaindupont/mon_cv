@@ -7,7 +7,7 @@ import './style.scss';
 const Accueil = ({open}) => {
   
   return (
-    <div className={classNames("accueil", {'accueil--open':open})}>
+    <div id="lienaccueil" className={classNames("accueil", {'accueil--open':open})}>
       <h1 className="accueil-name">Romain Dupont</h1>
       <div className="accueil-rond">
         <img className="accueil-picture" src={MaTete} alt="matete"/>

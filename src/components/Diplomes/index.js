@@ -4,7 +4,7 @@ import './style.scss';
 const Diplomes = () => {
   
   return (
-    <div className="diplomes">
+    <div id="liendiplomes" className="diplomes">
       <h2 className="diplomes-title">Diplomes</h2>
       <p className="diplomes-names"><span className="diplomes-date">2021</span>Formation O'clock</p>
       <p className="diplomes-names"><span className="diplomes-date">2005</span>DUT Logistique et Transport</p>
