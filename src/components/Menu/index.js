@@ -1,6 +1,7 @@
 import './style.scss';
 import classNames from 'classnames';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Menu({open, setOpen}) {
   let url ='';
@@ -8,12 +9,12 @@ function Menu({open, setOpen}) {
     <div className="app-menu">
       <div className={classNames("menu-modal", {'menu-modal--open':open})}></div>
         <nav className={classNames("menu-nav", {'menu-nav--open':open})}>
-          <a href={url}>Accueil</a>
-          <a href={url}>A propos</a>
-          <a href={url}>Connaissances</a>
-          <a href={url}>Diplômes</a>
-          <a href={url}>Expériences</a>
-          <a href={url}>Contact</a>
+          <Link to="/accueil#lienaccueil">Accueil</Link>
+          <Link to="/a_propos#lienapropos">A propos</Link>
+          <Link to="/connaissance#lienconnaissances">Connaissances</Link>
+          <Link to="/diplomes#liendiplomes">Diplômes</Link>
+          <Link to="/experiences#lienexperiences">Expériences</Link>
+          <Link to="/contact#liencontact">Contact</Link>
         </nav>
         
       <div className="menu" onClick={e => setOpen(!open)}>

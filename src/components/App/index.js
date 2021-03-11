@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './style.scss';
 import Menu from '../Menu';
 import Accueil from '../Accueil';
 import Apropos from '../Apropos';
@@ -12,12 +13,12 @@ const App = () => {
   return (
     <div className="App">
       <Menu open={open} setOpen={setOpen} />
-      <Accueil open={open} />
-      <Apropos />
-      <Diplomes />
-      <Connaissances />
-      <Xp />
-      <Contact />
+        <Accueil open={open} />
+        <Apropos />
+        <Diplomes />
+        <Connaissances id="section 3"/>
+        <Xp />
+        <Contact />
     </div>
 
 )}

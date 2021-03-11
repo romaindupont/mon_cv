@@ -16,7 +16,7 @@ import './style.scss';
 const Connaissances = () => {
   
   return (
-    <div className="connaissances">
+    <div id="lienconnaissances" className="connaissances">
       <h2 className="connaissances-title">Mes Connaissances</h2>
       <div className="connaissances-images">
         <span tooltip="Html5"><img src={html5} alt="html5-logo"/></span>

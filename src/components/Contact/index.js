@@ -4,7 +4,7 @@ import './style.scss';
 const Contact = () => {
   let url ='';
   return (
-    <div className="contact">
+    <div id="liencontact" className="contact">
         <h2 className="contact-title">Contact</h2>
         <form method="post">
             <label>Votre adresse email
