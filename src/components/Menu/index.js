@@ -17,6 +17,7 @@ function Menu({open, setOpen}) {
           <Link to="/diplomes#liendiplomes" onClick={closeMenu}>Diplômes</Link>
           <Link to="/experiences#lienexperiences" onClick={closeMenu}>Expériences</Link>
           <Link to="/contact#liencontact" onClick={closeMenu}>Contact</Link>
+
         </nav>
         
       <div className="menu" onClick={e => setOpen(!open)}>
