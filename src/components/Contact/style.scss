@@ -1,14 +1,67 @@
-  .contact {
-    height: 100vh;
-    background-color: #282828;
-    text-align: center;
+.contact {
+  height: 120vh;
+  background-color: #282828;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 
-    &-title {
-        margin: 0 auto;
-        padding-top: 3rem;
-        text-transform: uppercase;
-        color: #5a5a5a;
-        font-size: 2rem;
-    
+  &-title {
+      margin: 0 auto;
+      padding-top: 3rem;
+      text-transform: uppercase;
+      color: #5a5a5a;
+      font-size: 2rem;
+  
+  }
+  &-logo {
+      width: 50%;
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+  }
+}
+
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 2rem;
+  margin-right: 2rem;
+  text-align: right;
+  margin-top: 10rem;
+  &-email {
+    position: relative;
+    text-align: left;
+    &-label {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      &::before {
+        content: 'Votre adresse email';
+      }
+/*       &::after {
+        content: '';
+      } */
+/*       &:not([value=""]){
+        top: -30px;
+      } */
+      &--blur {
+        top: -30px;
+        transition: .3s ease;
+      }
     }
+    &-input {
+    width: 60%;
+    border-radius: 5px;
+    border: 0;
+    border-bottom: 2px solid #5a5a5a;
+    background-color: #282828;
+    &:focus {
+        outline: none;
+    }
+    }
+  }
+    
   }
