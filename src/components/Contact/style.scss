@@ -22,12 +22,13 @@
 }
 
 .form {
+  margin-left: 4rem;
   width: 50%;
   display: flex;
   flex-direction: column;
   position: absolute;
   right: 2rem;
-  margin-right: 2rem;
+  margin-right: -10rem;
   text-align: right;
   margin-top: 10rem;
   &-email {
@@ -102,33 +103,59 @@
   margin-top: 3rem;
   position: relative;
   text-align: left;
-  &-label {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    color: #5a5a5a;
-    &::before {
-      content: 'Votre message';
-    }
-    &--blur {
-      top: -30px;
-      transition: .3s ease;
-      color:#790000;
-    }
-  }
+
+
   &-input {
     width: 60%;
     border-radius: 5px;
-    border: 0;
+    border: 1px solid #5a5a5a;
     border-bottom: 2px solid #5a5a5a;
     background-color: #282828;
-    
+    color:#000;
+    &::placeholder {
+      color:#5a5a5a;
+    }
     &:focus {
       outline: none;
       font-size: 1.5rem;
+      border: 2px solid #790000;
       border-bottom: 2px solid #790000;
     }
   }
   }
+.form-button {
+  margin-top: 1rem;
+  cursor: pointer;
+  outline: none;
+  background-color:#5a5a5a;
+  border-radius: 10px;
+  border:none;
+  box-shadow: 0px 10px #1F454B;
+  &:hover {
+    transform: translateY(3px);
+    box-shadow: 0px 7px#7A0C27;
+  }
+  &:active {
+    transform: translateY(7px);
+    box-shadow: 0px 3px #790000;
+  }
+ &-img {
+   width: 15%;
+   margin: 0 auto;
 
+ }
+
+}
+.button {
+  width: 60%;
+  text-align: center;
+}
+.contact-logo{
+  width: 50%;
+  height: 100%;
+
+}
+
+#mapid {
+  height: 180px;
+}

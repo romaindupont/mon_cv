@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 import classNames from 'classnames';
+import Map from './map'
+import Send from '../../assets/img/send.svg';
 import './style.scss';
 
 const Contact = () => {
@@ -23,18 +25,19 @@ const Contact = () => {
             </div>
             <div className="form-name">
                 <label className={classNames("form-name-label", {'form-name-label--blur':onFocusName})}></label>
-                    <input onClick={handleClickName} className="form-name-input" type="text"></input>
+                    <input onClick={handleClickName} className="form-name-input" type="text" required></input>
             </div>
             <div className="form-textarea">
                 <label className="form-textarea-label"></label>
-                    <textarea rows="5" cols="33" className="form-textarea-input">Votre message ici...</textarea>
+                    <textarea rows="5" cols="33" className="form-textarea-input" placeholder="Votre message ici..." required></textarea>
             </div>
-            
-            <button type="submit">Send It</button>
+            <div className="button">
+                <button className="form-button" type="submit"><img className="form-button-img" src={Send} alt="Envoyer"/></button>
+            </div>
         </form>
         <div className="contact-logo">
             <a href={url}>image github</a>
-            <p>Caen</p>
+            <Map />
             <a href="tel:00433629913634">phone 06 29 91 36 34</a>
             <a href="mailto:rdt.romaindupont@gmail.com">mail : rdt.romaindupont@gmail.com</a>
         </div>
