@@ -16,7 +16,11 @@ export default [
     year: '2011-à ce jour',
     description: 'CDI au sein de la Société HYDEQUIP, fabricant de composants et équipements  électro-hydrauliques. Acheteur-approvisionneur. Mise en place d’outils d’aide à la gestion des approvisionnements et des achats. Créations d’outils (langage Python) pour la gestion de planning de production, le suivi des productions, et les coûts d’achat et de production.',
     technology: 'Python 3, SQLite',
-    link: ''
+    link: '',
+    picture: './workspace/mon_cv/src/assets/img/logicielPython.png',
+    picture1: 'https://i.imgur.com/yATJpea.png',
+    picture2: 'https://i.imgur.com/VSKddcP.png',
+    picture3: 'https://i.imgur.com/7DvD9yv.png'
   },
   {
     id: 3,
