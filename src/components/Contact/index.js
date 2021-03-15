@@ -1,12 +1,18 @@
 import React, {useState} from 'react';
 import classNames from 'classnames';
+import Map from './map'
+import Send from '../../assets/img/send.svg';
 import './style.scss';
 
 const Contact = () => {
-  const [onFocus, setOnFocus] = useState(false);
+  const [onFocusEmail, setOnFocusEmail] = useState(false);
+  const [onFocusName, setOnFocusName] = useState(false);
   const handleBlur = () => {
-    setOnFocus(!onFocus)
-    //console.log(onFocus)
+    setOnFocusEmail(true)
+   //console.log(onFocus)
+  }
+  const handleClickName = () => {
+      setOnFocusName(true)
   }
   let url ='';
   return (
@@ -14,20 +20,24 @@ const Contact = () => {
         <h2 className="contact-title">Contact</h2>
         <form className="form" method="post">
             <div className="form-email">
-                <label className={classNames("form-email-label", {'form-email-label--blur':onFocus})}></label>
-                <input onFocus={handleBlur} onBlur={handleBlur} className="form-email-input" type="email" required></input>
+                <label className={classNames("form-email-label", {'form-email-label--blur':onFocusEmail})}></label>
+                <input onClick={handleBlur} className="form-email-input" type="email" required></input>
             </div>
-            <label  className="form-label">Votre nom
-                <input className="form-input" type="text"></input>
-            </label>
-            <label className="form-label">Votre message
-                <textarea rows="5" cols="33">Votre message ici...</textarea>
-            </label>
-            <button type="submit">Send It</button>
+            <div className="form-name">
+                <label className={classNames("form-name-label", {'form-name-label--blur':onFocusName})}></label>
+                    <input onClick={handleClickName} className="form-name-input" type="text" required></input>
+            </div>
+            <div className="form-textarea">
+                <label className="form-textarea-label"></label>
+                    <textarea rows="5" cols="33" className="form-textarea-input" placeholder="Votre message ici..." required></textarea>
+            </div>
+            <div className="button">
+                <button className="form-button" type="submit"><img className="form-button-img" src={Send} alt="Envoyer"/></button>
+            </div>
         </form>
         <div className="contact-logo">
             <a href={url}>image github</a>
-            <p>Caen</p>
+            <Map />
             <a href="tel:00433629913634">phone 06 29 91 36 34</a>
             <a href="mailto:rdt.romaindupont@gmail.com">mail : rdt.romaindupont@gmail.com</a>
         </div>
