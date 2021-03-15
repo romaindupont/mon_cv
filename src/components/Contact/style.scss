@@ -1,5 +1,5 @@
 .contact {
-  height: 150vh;
+  height: 120vh;
   background-color: #282828;
   text-align: center;
   display: flex;
@@ -156,6 +156,26 @@
 
 }
 
+
+.contact-logo-link {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  color: #5a5a5a;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  &--image {
+    padding-right: 1rem;
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
+}
 #mapid {
+  padding-top:2rem;
+  padding-bottom:2rem;
   height: 180px;
+  margin: 0 auto;
+  width: 250px;
+  filter: brightness(0.7) invert(1) contrast(2.2) hue-rotate(200deg) saturate(0.3) brightness(0.7);
 }

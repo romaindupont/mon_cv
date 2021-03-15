@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import classNames from 'classnames';
 import Map from './map'
 import Send from '../../assets/img/send.svg';
+import GithubLogo from '../../assets/img/github.png';
 import './style.scss';
 
 const Contact = () => {
@@ -9,12 +10,11 @@ const Contact = () => {
   const [onFocusName, setOnFocusName] = useState(false);
   const handleBlur = () => {
     setOnFocusEmail(true)
-   //console.log(onFocus)
   }
   const handleClickName = () => {
       setOnFocusName(true)
   }
-  let url ='';
+  let url ='https://github.com/romaindupont';
   return (
     <div id="liencontact" className="contact">
         <h2 className="contact-title">Contact</h2>
@@ -36,10 +36,10 @@ const Contact = () => {
             </div>
         </form>
         <div className="contact-logo">
-            <a href={url}>image github</a>
+            <a className="contact-logo-link" href={url}><img className="contact-logo-link--image" src={GithubLogo} alt="Lien vers mon github"></img> romaindupont</a>
             <Map />
-            <a href="tel:00433629913634">phone 06 29 91 36 34</a>
-            <a href="mailto:rdt.romaindupont@gmail.com">mail : rdt.romaindupont@gmail.com</a>
+            <a className="contact-logo-link" href="tel:00433629913634">06 29 91 36 34</a>
+            <a className="contact-logo-link" href="mailto:rdt.romaindupont@gmail.com"> rdt.romaindupont@gmail.com</a>
         </div>
         
     </div>
