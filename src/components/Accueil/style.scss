@@ -1,4 +1,5 @@
 .accueil {
+  width: calc(100vw + 150px);
   position: relative;
   text-align: center;
   background-color: #282828;
@@ -9,16 +10,29 @@
   &-name {
     font-size: 2rem;
     font-weight: 900;
+    margin-right: 150px;
 
   }
-  &-picture {
+  
+  &-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-right: 150px;
+  }
+  
+  &-scroll {
+    margin-right: 150px;
+    padding-top: 5rem;
+    width: 50px;
+    stroke:#c1c1c1;
+  }
+}
+.accueil-ensemble {
+  margin-right: 150px;
+    &-picture {
     width: 50%;
     margin-top: 1rem;
-
-  }
-  &-title {
-    font-size: 1,5rem;
-    font-weight: 900;
+    margin: 1rem auto;
   }
   &-rond {
     margin: auto;
@@ -27,13 +41,8 @@
     border-radius: 50%;
     background-color: #790000;
   }
-  &-scroll {
-    padding-top: 5rem;
-    width: 50px;
-    stroke:#c1c1c1;
-  }
 }
-
 .accueil--open {
   padding-top: 12rem;
+
 }

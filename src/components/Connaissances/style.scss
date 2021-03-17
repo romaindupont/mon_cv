@@ -1,10 +1,12 @@
 .connaissances {
+  width: calc(100vw + 150px);
   height: 100vh;
   background-color: #efeded;
   text-align: center;
 
   &-title {
-    margin: 0;
+    margin-right: 150px;
+    margin-top: 0;
     padding-top: 3rem;
     text-transform: uppercase;
     color: #5a5a5a;
@@ -17,6 +19,7 @@
     flex-wrap: wrap;
     padding-top: 2rem;
     margin: auto;
+  
 
   }
 }

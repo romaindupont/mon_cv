@@ -1,10 +1,12 @@
 .diplomes {
+  width: calc(100vw + 150px);
   height: 100vh;
   background-color: #dfdada;
   text-align: center;
 
   &-title {
-    margin: 0;
+    margin-right: 150px;
+    margin-top: 0;
     padding-top: 3rem;
     text-transform: uppercase;
     color: #5a5a5a;
@@ -12,10 +14,11 @@
 
   }
   &-names {
+    margin-right: 150px;
     font-size: 1.5rem;
     color: #5a5a5a;
-    padding: 2rem 3rem;
-    text-align: center;
+    padding: 2rem 25rem;
+    text-align: left;
   }
   &-date {
     padding-right: 3rem;
