@@ -27,6 +27,15 @@
     5px 5px 0px #999,
     6px 6px 0px #999; 
   background-color: #e6e6e6;
+  @media only screen and (max-width: 1200px) {
+    margin: 6rem 6rem 6rem 6rem;
+    }
+  @media only screen and (max-width: 900px) {
+      margin: 6rem 6rem 6rem 1rem;
+      }  
+  @media only screen and (max-width: 500px) {
+        margin: 6rem 7rem 6rem 1rem;
+  }    
 
   &-description {
     padding-top: 2rem;
@@ -74,6 +83,14 @@
   width: 40%;
   box-shadow: 10px 10px 10px 10px #999;
   margin: 2rem;
+  @media only screen and (max-width: 900px) {
+    width: 50%;
+    }
+  @media only screen and (max-width: 500px) {
+      width: 70%;
+      margin-right: 8rem;
+    }
+
 
 }
 .xp-container {
