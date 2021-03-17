@@ -9,8 +9,10 @@ const Accueil = ({open}) => {
   return (
     <div id="lienaccueil" className={classNames("accueil", {'accueil--open':open})}>
       <h1 className="accueil-name">Romain Dupont</h1>
-      <div className="accueil-rond">
-        <img className="accueil-picture" src={MaTete} alt="matete"/>
+      <div className="accueil-ensemble">
+          <div className="accueil-ensemble-rond">
+            <img className="accueil-ensemble-picture" src={MaTete} alt="matete"/>
+          </div>
       </div>
       <h2 className="accueil-title">Développeur Web & web mobile</h2>
       <object className="accueil-scroll" type="image/svg+xml" data={Scroll}>svg-animation</object>

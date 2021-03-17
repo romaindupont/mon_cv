@@ -1,10 +1,12 @@
 .xp {
+  width: calc(100vw + 150px);
   height: 100%;
   background-color: #ffffff;
   text-align: center;
   
   &-title {
-    margin: 0;
+    margin-right: 150px;
+    margin-top: 0;
     padding-top: 3rem;
     text-transform: uppercase;
     color: #5a5a5a;
@@ -76,7 +78,7 @@
 }
 .xp-container {
   display: flex;
-  width: 100%;
+  width: 90%;
   flex-wrap: wrap;
 
 }
