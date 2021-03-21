@@ -5,7 +5,7 @@ import './style.scss';
 
 const Scroll = () => {
   const [isHover, setIsHover] = useState(false)
-  console.log(isHover)
+  //console.log(isHover)
   return (
     <div className={classNames("scrollToTop", {'scrollToTop--nohover':isHover})} onMouseEnter={()=> setIsHover(false)}
                     onMouseLeave={()=> setIsHover(true)} >

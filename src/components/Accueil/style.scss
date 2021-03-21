@@ -11,6 +11,9 @@
     width: calc(100vw + 166px);
     padding-top: 8rem;
     }
+    @media only screen and (max-width: 390px) {
+      padding-top: 10rem;
+    }
   &-name {
     font-size: 2rem;
     font-weight: 900;
@@ -51,5 +54,7 @@
 }
 .accueil--open {
   padding-top: 12rem;
-
+  @media only screen and (max-width: 390px) {
+    padding-top: 15rem;
+  }
 }

@@ -11,6 +11,9 @@
     text-transform: uppercase;
     color: #5a5a5a;
     font-size: 2rem;
+    @media only screen and (max-width: 430px) {
+      font-size: 1.5rem;
+    }
 
   }
 }
@@ -35,7 +38,11 @@
       }  
   @media only screen and (max-width: 500px) {
         margin: 6rem 7rem 6rem 1rem;
-  }    
+  } 
+  @media only screen and (max-width: 340px) {
+    width: 80%;
+  }
+
 
   &-description {
     padding-top: 2rem;
@@ -44,7 +51,9 @@
     padding-right: 3rem;
     text-align: left;
     line-height: 2em;
-
+    @media only screen and (max-width: 340px) {
+      font-size: 0.6rem;
+    }
     &--date {
       font-weight: 900;
       position: absolute;
@@ -61,9 +70,16 @@
     padding-right: 3rem;
     text-align: left;
     line-height: 2em; 
+    @media only screen and (max-width: 340px) {
+    font-size: 0.6rem;
+    }
 
     &--title {
       font-weight: 900;
+      @media only screen and (max-width: 340px) {
+        font-size: 0.6rem;
+        }
+    
     }
 
   }
@@ -74,10 +90,18 @@
     text-decoration: none;
     color: black;
     font-weight: 900;
+    @media only screen and (max-width: 340px) {
+      font-size: 0.6rem;
+      }
+  
   }
 }
 .xp-pictures{
   width: 100%;
+  @media only screen and (max-width: 400px) {
+    padding-right: 1rem;
+   
+  }
 }
 .xp-pictures > img {
   width: 40%;
@@ -90,6 +114,10 @@
       width: 70%;
       margin-right: 8rem;
     }
+    @media only screen and (max-width: 340px) {
+      width: 50%;
+     
+    }
 
 
 }
@@ -98,4 +126,12 @@
   width: 90%;
   flex-wrap: wrap;
 
+}
+
+.background {
+  width: 100%;
+  height: calc(100vh - 80px);
+  position: absolute;
+  top: 80px;
+  background-color: rgba(0, 0, 0, 0.4);
 }
