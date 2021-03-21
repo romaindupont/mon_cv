@@ -12,6 +12,11 @@
   justify-content: center;
   padding-top: 2rem;
   transform: rotate(3deg);
+  @media only screen and (max-width: 450px) {
+    width: 60px;
+    height: 60px;
+    padding-top: 1rem;
+  }
   &-link--1 {
    // text-align: center;
     display: block;

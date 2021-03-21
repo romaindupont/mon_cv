@@ -8,10 +8,12 @@ import Connaissances from '../Connaissances';
 import Xp from '../Xp';
 import Contact from '../Contact';
 import Scroll from '../Scroll';
+
 const App = () => { 
+  const [show, setShow] = useState(false)
   const [open, setOpen] = useState(false);
   useEffect(()=>{
-    console.log(console.log(window.pageXOffset))
+    //console.log(console.log(window.pageXOffset))
   })
   return (
     <div className="App">
@@ -20,9 +22,10 @@ const App = () => {
         <Apropos />
         <Diplomes />
         <Connaissances />
-        <Xp />
+        <Xp show={show} setShow={setShow}/>
         <Contact />
         <Scroll />
+        
     </div>
 
 )}
