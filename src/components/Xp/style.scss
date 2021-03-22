@@ -103,7 +103,7 @@
    
   }
 }
-.xp-pictures > img {
+.xp-pictures-img {
   width: 40%;
   box-shadow: 10px 10px 10px 10px #999;
   margin: 2rem;
@@ -138,6 +138,12 @@
   right: 0;
   background-color: rgba(0, 0, 0, 0.4);
 }
-.carrousel-1 {
-  width: 50%;
+
+.background--close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.modalImage {
+  object-fit: cover;
 }

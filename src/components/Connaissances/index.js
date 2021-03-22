@@ -19,18 +19,18 @@ const Connaissances = () => {
     <div id="lienconnaissances" className="connaissances">
       <h2 className="connaissances-title">Mes Connaissances</h2>
       <div className="connaissances-images">
-        <span tooltip="Html5"><img src={html5} alt="html5-logo"/></span>
-        <span tooltip="CSS3"><img src={css3} alt="css3-logo"/></span>
-        <span tooltip="Javascript"><img src={js} alt="js-logo"/></span>
-        <span tooltip="PHP"><img src={php} alt="php-logo"/></span>
-        <span tooltip="REACT"><img src={react} alt="react-logo"/></span>
-        <span tooltip="React-Redux"><img src={redux} alt="redux-logo"/></span>
-        <span tooltip="Python"><img src={python} alt="python-logo"/></span>
-        <span tooltip="Postgresql"><img src={psql} alt="psql-logo"/></span>
-        <span tooltip="Sqlite"><img src={sqlite} alt="sqlite-logo"/></span>
-        <span tooltip="Mysql"><img src={mysql} alt="mysql-logo"/></span>
-        <span tooltip="Lumen"><img src={lumen} alt="lumen-logo"/></span>
-        <span tooltip="Sass/Scss"><img src={sass} alt="sass-logo"/></span>
+        <span tooltip="Html5"><img className="connaissances-images-logo" src={html5} alt="html5-logo"/></span>
+        <span tooltip="CSS3"><img className="connaissances-images-logo" src={css3} alt="css3-logo"/></span>
+        <span tooltip="Javascript"><img className="connaissances-images-logo" src={js} alt="js-logo"/></span>
+        <span tooltip="PHP"><img className="connaissances-images-logo" src={php} alt="php-logo"/></span>
+        <span tooltip="REACT"><img className="connaissances-images-logo" src={react} alt="react-logo"/></span>
+        <span tooltip="React-Redux"><img className="connaissances-images-logo" src={redux} alt="redux-logo"/></span>
+        <span tooltip="Python"><img className="connaissances-images-logo" src={python} alt="python-logo"/></span>
+        <span tooltip="Postgresql"><img className="connaissances-images-logo" src={psql} alt="psql-logo"/></span>
+        <span tooltip="Sqlite"><img className="connaissances-images-logo" src={sqlite} alt="sqlite-logo"/></span>
+        <span tooltip="Mysql"><img className="connaissances-images-logo" src={mysql} alt="mysql-logo"/></span>
+        <span tooltip="Lumen"><img className="connaissances-images-logo" src={lumen} alt="lumen-logo"/></span>
+        <span tooltip="Sass/Scss"><img className="connaissances-images-logo" src={sass} alt="sass-logo"/></span>
       </div>
     </div>
   );

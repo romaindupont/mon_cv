@@ -5,16 +5,16 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 const Modal = ({show, setShow, url}) => {
   const handleDragStart = (e) => e.preventDefault();
   const photo = [
-     <div className="yours-custom-class"><img src={url}/></div>,
+     <div className="modalImage"><img src={url}/></div>,
       
   ]
   return(
     show
       ? <div className="background">
-            <AliceCarousel mouseTracking >
-          {photo}
-        </AliceCarousel>
-            <button onClick={()=>setShow(false)}>Close</button>
+            <AliceCarousel mouseTracking autoWidth={50} >
+              {photo}
+            </AliceCarousel>
+            <button className="background--close" onClick={()=>setShow(false)}>Close</button>
         </div>
       : null)
 ;

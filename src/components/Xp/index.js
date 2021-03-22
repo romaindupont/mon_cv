@@ -20,10 +20,10 @@ const handleClick = (e) => {
             <a className="xp-infos-link" href={xp.link}>{xp.link}</a>
         </div>
         <div className="xp-pictures">
-          <img src={xp.picture} alt="" onClick={handleClick}/>
-          <img src={xp.picture1} alt=""/>
-          <img src={xp.picture2} alt=""/>
-          <img src={xp.picture3} alt=""/>
+          <img className="xp-pictures-img" src={xp.picture} alt="" onClick={handleClick}/>
+          <img className="xp-pictures-img" src={xp.picture1} alt=""/>
+          <img className="xp-pictures-img" src={xp.picture2} alt=""/>
+          <img className="xp-pictures-img" src={xp.picture3} alt=""/>
         </div>
        </div>
      ))}
