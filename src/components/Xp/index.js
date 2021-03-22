@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './style.scss';
 import Data from '../../data/data';
 import Modal from './modal';
 const Xp = ({show, setShow}) => {
-
-const handleClick = () => {
+const [url, setUrl] = useState('');
+const handleClick = (e) => {
   setShow(!show)
-  console.log(show)
+  const imageClick = e.target.src
+  setUrl(imageClick);
 }
   return (
     <div id="lienexperiences" className="xp">
@@ -26,7 +27,7 @@ const handleClick = () => {
         </div>
        </div>
      ))}
-     <Modal show={show} />
+     <Modal show={show} setShow={setShow} url={url} />}
     </div>
   );
 }

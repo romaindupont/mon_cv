@@ -130,8 +130,14 @@
 
 .background {
   width: 100%;
-  height: calc(100vh - 80px);
-  position: absolute;
-  top: 80px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right: 0;
   background-color: rgba(0, 0, 0, 0.4);
+}
+.carrousel-1 {
+  width: 50%;
 }
