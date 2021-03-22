@@ -21,13 +21,13 @@ const handleClick = (e) => {
         </div>
         <div className="xp-pictures">
           <img className="xp-pictures-img" src={xp.picture} alt="" onClick={handleClick}/>
-          <img className="xp-pictures-img" src={xp.picture1} alt=""/>
-          <img className="xp-pictures-img" src={xp.picture2} alt=""/>
-          <img className="xp-pictures-img" src={xp.picture3} alt=""/>
+          <img className="xp-pictures-img" src={xp.picture1} alt="" onClick={handleClick}/>
+          <img className="xp-pictures-img" src={xp.picture2} alt="" onClick={handleClick}/>
+          <img className="xp-pictures-img" src={xp.picture3} alt="" onClick={handleClick}/>
         </div>
        </div>
      ))}
-     <Modal show={show} setShow={setShow} url={url} />}
+     <Modal show={show} setShow={setShow} url={url} />
     </div>
   );
 }
