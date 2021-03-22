@@ -147,3 +147,7 @@
 .modalImage {
   object-fit: cover;
 }
+.modalImage > img {
+  padding-top: 3rem;
+  width: 70%;
+}
