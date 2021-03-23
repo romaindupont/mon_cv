@@ -19,12 +19,14 @@ const handleClick = (e) => {
             <p className="xp-infos-techno"><span className="xp-infos-techno--title">Technologies : </span>{xp.technology}</p>
             <a className="xp-infos-link" href={xp.link}>{xp.link}</a>
         </div>
+        {xp.picture ? 
         <div className="xp-pictures">
           <img className="xp-pictures-img" src={xp.picture} alt="" onClick={handleClick}/>
           <img className="xp-pictures-img" src={xp.picture1} alt="" onClick={handleClick}/>
           <img className="xp-pictures-img" src={xp.picture2} alt="" onClick={handleClick}/>
           <img className="xp-pictures-img" src={xp.picture3} alt="" onClick={handleClick}/>
         </div>
+          :null}
        </div>
      ))}
      <Modal show={show} setShow={setShow} url={url} />

@@ -15,7 +15,6 @@ const Accueil = ({open}) => {
           </div>
       </div>
       <h2 className="accueil-title">Développeur Web & web mobile</h2>
-      <object className="accueil-scroll" type="image/svg+xml" data={Scroll}>svg-animation</object>
     </div>
   );
 }
