@@ -1,7 +1,7 @@
 .contact {
   width: calc(100vw + 150px);
   height: 120vh;
-  background-color: #282828;
+  background-color: #000;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -44,12 +44,13 @@
     flex-direction: column;
     margin-top: 40rem;
     right: 0;
-    margin-right: -5rem;
+    margin-right: -7rem;
     margin-left: 0;
     width: 100%;
   }
   @media only screen and (max-width: 390px) {
     margin-top: 35rem;
+    margin-right: -5rem;
   }
   @media only screen and (max-width: 340px) {
     margin-right: -4rem;
@@ -77,11 +78,13 @@
       }
     }
     &-input {
+    color: #fff;
     width: 60%;
     border-radius: 5px;
     border: 0;
     border-bottom: 2px solid #5a5a5a;
-    background-color: #282828;
+    background-color: #000;
+    caret-color: #7A0C27;
     &:focus {
         outline: none;
         border-bottom: 2px solid #790000;
@@ -113,7 +116,9 @@
       border-radius: 5px;
       border: 0;
       border-bottom: 2px solid #5a5a5a;
-      background-color: #282828;
+      background-color: #000;
+      caret-color: #7A0C27;
+      color: #fff;
       
       &:focus {
         outline: none;
@@ -134,8 +139,9 @@
     border-radius: 5px;
     border: 1px solid #5a5a5a;
     border-bottom: 2px solid #5a5a5a;
-    background-color: #282828;
-    color:#000;
+    background-color: #000;
+    color:#fff;
+    caret-color: #7A0C27;
     &::placeholder {
       color:#5a5a5a;
     }
@@ -201,6 +207,9 @@
   @media only screen and (max-width: 500px) {
     font-size: 1rem;
   }
+  &:hover {
+    color:#7A0C27;
+  }
   &--image {
     padding-right: 1rem;
     width: 40px;
@@ -210,6 +219,7 @@
       width: 20px;
       height: 20px;
     }
+
   }
 }
 #mapid {
