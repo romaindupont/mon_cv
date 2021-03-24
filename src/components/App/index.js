@@ -8,6 +8,7 @@ import Connaissances from '../Connaissances';
 import Xp from '../Xp';
 import Contact from '../Contact';
 import Scroll from '../Scroll';
+import Cursor from '../Cursor';
 
 const App = () => { 
   const [show, setShow] = useState(false)
@@ -17,6 +18,7 @@ const App = () => {
   })
   return (
     <div className="App">
+      <Cursor />
       <Menu open={open} setOpen={setOpen} />
         <Accueil open={open} />
         <Apropos />

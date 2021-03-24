@@ -3,6 +3,7 @@ import classNames from 'classnames';
 import React from 'react';
 import { HashLink as Link } from 'react-router-hash-link';
 
+
 function Menu({open, setOpen}) {
     const closeMenu = () => {
         setOpen(!open);
@@ -17,7 +18,7 @@ function Menu({open, setOpen}) {
           <Link className="menu-nav--link" to="/diplomes#liendiplomes" onClick={closeMenu}>Diplômes</Link>
           <Link className="menu-nav--link" to="/experiences#lienexperiences" onClick={closeMenu}>Expériences</Link>
           <Link className="menu-nav--link" to="/contact#liencontact" onClick={closeMenu}>Contact</Link>
-
+          
         </nav>
         
       <div className="menu" onClick={e => setOpen(!open)}>
