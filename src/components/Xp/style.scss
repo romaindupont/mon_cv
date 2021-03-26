@@ -162,3 +162,39 @@
     width: 98%;
   }
 }
+.background--close {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  //transform: translate(-50%, -50%);
+  display: inline-block;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.5);
+  }
+ &-bar1 {
+  transform:rotate(-45deg) translate(0px, 1px);
+  display: block;
+  width:32px;
+  height:5px;
+  background-color:#282828;
+  margin:6px 0;
+  transition:0.4s;
+  &:hover{
+    background-color:#790000;
+  }
+ }
+ &-bar2 {
+  transform:rotate(45deg) translate(-8px, -8px);
+  display: block;
+  width:32px;
+  height:5px;
+  background-color:#282828;
+  margin:6px 0;
+  transition:0.4s;
+  &:hover{
+    background-color:#790000;
+  }
+}
+
+}
