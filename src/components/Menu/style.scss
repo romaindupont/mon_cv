@@ -98,8 +98,15 @@
   @media only screen and (max-width: 800px) {
     padding-right: 7rem;
   }
+  @media only screen and (max-width: 450px) {
+    padding-top: 8%;
+  }
   @media only screen and (max-width: 350px) {
     margin-left: -2rem;
+    padding-top: 18%;
+  }
+  @media only screen and (max-width: 300px) {
+    padding-top: 20%;
   }
   
 }
@@ -122,6 +129,16 @@
     padding-top: 0.3rem;
     text-align: left;
     animation: apparition 4s;
+  }
+  @media only screen and (max-width: 600px) {
+    padding-left: 7rem;
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: 440px) {
+    font-size: 1.6rem;
+  }
+  @media only screen and (max-width: 300px) {
+    font-size: 1.2rem;
   }
 }
 

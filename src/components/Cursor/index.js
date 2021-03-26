@@ -35,7 +35,14 @@ useEffect(() => {
    };
 
    const onMouseMove = (e) => {
-       setPosition({x: e.clientX, y: e.clientY});
+    setInterval(setPosition({x: e.clientX, y: e.clientY}),100);
+      /*  setInterval(function(){
+        xp += ((mouseX - xp)/6);
+        yp += ((mouseY - yp)/6);
+        $("#circle").css({left: xp +'px', top: yp +'px'});
+      }, 20);
+    
+    }); */
    };            
 
   return (
