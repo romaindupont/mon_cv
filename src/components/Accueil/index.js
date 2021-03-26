@@ -1,7 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
 import MaTete from '../../assets/img/tetefinal.png';
-import Scroll from '../../assets/img/mouse.svg';
 import './style.scss';
 
 const Accueil = ({open}) => {
