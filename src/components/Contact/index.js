@@ -38,12 +38,12 @@ const Contact = () => {
         <h2 className="contact-title">Contact</h2>
         <form className="form" method="post" onSubmit={sendEmail}>
             <div className="form-email">
-                <label className={classNames("form-email-label", {'form-email-label--blur':onFocusEmail})}></label>
-                <input onClick={handleBlur} className="form-email-input" type="email" name="your_email" required></input>
+                <label className={classNames("form-email-label", {'form-email-label--blur':onFocusEmail})}>
+                <input onClick={handleBlur} className="form-email-input" type="email" name="your_email" required></input></label>
             </div>
             <div className="form-name">
-                <label className={classNames("form-name-label", {'form-name-label--blur':onFocusName})}></label>
-                    <input onClick={handleClickName} className="form-name-input" type="text" name="name" required></input>
+                <label className={classNames("form-name-label", {'form-name-label--blur':onFocusName})}>
+                    <input onClick={handleClickName} className="form-name-input" type="text" name="name" required></input></label>
             </div>
             <div className="form-textarea">
                 <label className="form-textarea-label"></label>
