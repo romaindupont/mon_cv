@@ -8,6 +8,9 @@
   pointer-events: none;
   z-index: 9999;
   mix-blend-mode: difference;
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
 }
 .cursor--linkHover{
   transform: translate(-50%, -50%) scale(1.5);

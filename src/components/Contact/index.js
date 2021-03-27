@@ -54,8 +54,8 @@ const Contact = () => {
             </div>
         </form>
         <div className="contact-logo">
-            <a className="contact-logo-link" href={url}><img className="contact-logo-link--image" src={GithubLogo} alt="Lien vers mon github"></img> romaindupont</a>
-            <a className="contact-logo-link" href="https://www.linkedin.com/in/romain-dupont-488a81a7/"><img className="contact-logo-link--image" src={LinkedinLogo} alt="Lien vers mon Linkedin"></img> romain-dupont</a>
+            <a className="contact-logo-link" href={url}><img className="contact-logo-link--image" target="_blank" rel="noreferrer" src={GithubLogo} alt="Lien vers mon github"></img> romaindupont</a>
+            <a className="contact-logo-link" href="https://www.linkedin.com/in/romain-dupont-488a81a7/" target="_blank" rel="noreferrer"><img className="contact-logo-link--image" src={LinkedinLogo} alt="Lien vers mon Linkedin"></img> romain-dupont</a>
             <Map />
             <a className="contact-logo-link" href="tel:00433629913634">06 29 91 36 34</a>
             <a className="contact-logo-link" href="mailto:rdt.romaindupont@gmail.com"> rdt.romaindupont@gmail.com</a>

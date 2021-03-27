@@ -1,7 +1,7 @@
 .app-menu {
   z-index: 1;
   position: relative;
-  background-color: #282828;
+  background-color: #000;
 }
 .menu {
   position: fixed;
@@ -27,21 +27,21 @@
             display: block;
             width:32px;
             height:5px;
-            background-color:#282828;
+            background-color:#000;
             margin:6px 0;
             transition:0.4s;
         }
         &-bar2 {
             width:32px;
             height:5px;
-            background-color:#282828;
+            background-color:#000;
             margin:6px 0;
             transition:0.4s;   
         }
         &-bar3 {
             width:32px;
             height:5px;
-            background-color:#282828;
+            background-color:#000;
             margin:6px 0;
             transition:0.4s;  
         }
@@ -112,7 +112,7 @@
 }
 
 .menu-nav--link {
-  width: 15%;
+  width: 70%;
   padding-bottom: 1rem;
   font-weight: 900;
   text-transform: uppercase;
