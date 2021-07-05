@@ -13,10 +13,10 @@ const Contact = () => {
   const [onFocusEmail, setOnFocusEmail] = useState(false);
   const [onFocusName, setOnFocusName] = useState(false);
   const handleBlur = () => {
-    setOnFocusEmail(true)
+    setOnFocusEmail(false)
   }
   const handleClickName = () => {
-      setOnFocusName(true)
+      setOnFocusName(false)
   }
   function sendEmail(e) {
     e.preventDefault();
